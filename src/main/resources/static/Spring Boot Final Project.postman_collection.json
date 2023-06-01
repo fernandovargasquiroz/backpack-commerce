@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "e9bb297a-bc27-41ba-8229-3729da326265",
+		"name": "Spring Boot Final Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1288376",
+		"_collection_link": "https://bold-sunset-155453.postman.co/workspace/46ba1c3f-b3b6-43f4-803c-5546392feb2a/collection/1288376-e9bb297a-bc27-41ba-8229-3729da326265?action=share&creator=1288376&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "US-01",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mochila TEST2\",\n    \"description\": \"Mochila TEST2\",\n    \"imageUrl\": \"http://imageTEST2.png\",\n    \"price\": 62,\n    \"stock\": 72,\n    \"active\": true,\n    \"categoryId\": \"4563eb53-8a93-4c2d-9415-27c6a010fda1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/products/0dd8b7b9-7129-474a-ae3c-2d8146bd5c2b ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"products",
+						"0dd8b7b9-7129-474a-ae3c-2d8146bd5c2b "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "US-02",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/products/category/4563eb53-8a93-4c2d-9415-27c6a010fda1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"products",
+						"category",
+						"4563eb53-8a93-4c2d-9415-27c6a010fda1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "US-03",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"SELLER\",\n    \"description\": \"Seller description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"roles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
